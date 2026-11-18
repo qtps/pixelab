@@ -1,12 +1,12 @@
-import heroImage from '../../assets/hero.png';
-import bulbIcon from '../../assets/bulb.svg';
+// import heroImage from '../../assets/hero.png';
+// import bulbIcon from '../../assets/bulb.svg';
 import SiteHeader from '../layout/SiteHeader';
 
 const HeroSection = () => (
   <section className="hero-section">
     <SiteHeader />
 
-    <div className="hero-content container">
+    {/* <div className="hero-content container">
       <div className="hero-copy">
         <p className="eyebrow">Digital products, made human</p>
         <h1>Make your next big idea <em>impossible to ignore.</em></h1>
@@ -37,12 +37,12 @@ const HeroSection = () => (
           <span>years of<br />creating</span>
         </div>
       </div>
-    </div>
+    </div> */}
 
-    <div className="scroll-hint container">
+    {/* <div className="scroll-hint container">
       <span className="scroll-line" />
       Scroll to explore
-    </div>
+    </div> */}
   </section>
 );
 
