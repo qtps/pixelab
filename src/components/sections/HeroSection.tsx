@@ -3,12 +3,9 @@ import bulbIcon from '../../assets/bulb.svg';
 import activityIcon from '../../assets/Activity.svg';
 import arrowImg from '../../assets/arrow.png';
 import playIcon from '../../assets/Play.svg';
-import SiteHeader from '../layout/SiteHeader';
 
 const HeroSection = () => (
-  <section className="hero-section overflow-hidden bg-white text-[#101f3a]">
-    <SiteHeader />
-
+  <section className="hero-section overflow-hidden bg-white text-[#101f3a]" id="home">
     <div className="mx-auto grid min-h-[calc(100vh-500px)] container items-center gap-8 px-5  sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:gap-0 lg:px-10  ">
       <div className="relative z-10 max-w-xl">
         <h1 className="max-w-137.5 text-6xl font-extrabold leading-[1.13] tracking-[-0.04em] sm:text-6xl lg:text-[4rem]">
@@ -25,7 +22,7 @@ const HeroSection = () => (
 
         <div className="mt-10 flex items-center gap-6">
           <a
-            href="#contact"
+            href="#newsletter"
             className="rounded-md bg-[#ff650d] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#e95500]"
           >
             Get Started

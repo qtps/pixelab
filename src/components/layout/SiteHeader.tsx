@@ -7,10 +7,10 @@ const SiteHeader = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="relative bg-white">
+    <header className="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
       <nav className="site-header container mx-auto flex items-center justify-between py-4 px-4 sm:px-6 gap-4">
         {/* Logo section */}
-        <a href="/" onClick={closeMenu} className="shrink-0">
+        <a href="#home" onClick={closeMenu} className="shrink-0">
           <img
             src={logo}
             alt="Logo"
@@ -20,10 +20,10 @@ const SiteHeader = () => {
 
         {/* Desktop navlink section */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-gray-700">
-          <a href="/" className="whitespace-nowrap hover:text-orange-500 transition">Home</a>
-          <a href="/about" className="whitespace-nowrap hover:text-orange-500 transition">About Us</a>
-          <a href="/app" className="whitespace-nowrap hover:text-orange-500 transition">Our App</a>
-          <a href="/contact" className="whitespace-nowrap hover:text-orange-500 transition">Contacts</a>
+          <a href="#home" className="whitespace-nowrap hover:text-orange-500 transition">Home</a>
+          <a href="#team" className="whitespace-nowrap hover:text-orange-500 transition">About Us</a>
+          <a href="#services" className="whitespace-nowrap hover:text-orange-500 transition">Our App</a>
+          <a href="#newsletter" className="whitespace-nowrap hover:text-orange-500 transition">Contacts</a>
          
         </div>
 
@@ -67,10 +67,10 @@ const SiteHeader = () => {
       {menuOpen && (
         <div className="lg:hidden border-t border-gray-100 bg-white px-6 py-4 shadow-lg container mx-auto">
           <div className="flex flex-col gap-4 font-medium text-gray-700 text-center">
-            <a href="/" onClick={closeMenu} className="hover:text-orange-500 transition ">Home</a>
-            <a href="/about" onClick={closeMenu} className="hover:text-orange-500 transition">About Us</a>
-            <a href="/app" onClick={closeMenu} className="hover:text-orange-500 transition">Our App</a>
-            <a href="/contact" onClick={closeMenu} className="hover:text-orange-500 transition">Contacts</a>
+            <a href="#home" onClick={closeMenu} className="hover:text-orange-500 transition ">Home</a>
+            <a href="#team" onClick={closeMenu} className="hover:text-orange-500 transition">About Us</a>
+            <a href="#services" onClick={closeMenu} className="hover:text-orange-500 transition">Our App</a>
+            <a href="#newsletter" onClick={closeMenu} className="hover:text-orange-500 transition">Contacts</a>
           </div>
 
           <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-3">
